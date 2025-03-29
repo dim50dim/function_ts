@@ -71,7 +71,7 @@ function f09(a, b) {
 // Task 10
 // Напишите функцию f10, которая принимает 4 числа и возвращает меньшее из них. Тип данных функции, аргументы и типы аргументов укажите самостоятельно.
 function f10(a, b, c, d) {
-    return ''; // удалите данную строку при написании решения
+    return Math.min(a, b, c, d);
 }
 document.querySelector('.b-10').addEventListener('click', function () {
     document.querySelector('.out-10').textContent = String(f10(33, 22, 34, 17));

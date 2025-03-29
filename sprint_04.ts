@@ -104,8 +104,9 @@ function f09(a: number, b: number): number {
 // Task 10
 // Напишите функцию f10, которая принимает 4 числа и возвращает меньшее из них. Тип данных функции, аргументы и типы аргументов укажите самостоятельно.
 
-function f10(a, b, c, d) {
-    return ''; // удалите данную строку при написании решения
+function f10(a : number, b : number, c : number, d : number) : number {
+   return Math.min(a,b,c,d);
+
 }
 
 document.querySelector('.b-10').addEventListener('click', function (): void {
