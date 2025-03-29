@@ -32,7 +32,8 @@ document.querySelector('.b-4').addEventListener('click', function () {
 // Внимание здесь и далее в шаблоне функции может быть строка return ''. Данная строка нужна чтобы компилятор не ругался на функцию. Когда вы будете писать код функции удалите данную строку.
 let s5 = 'abcdefg';
 function f05() {
-    return ''; // удалите данную строку при написании решения
+    let random = Math.floor(Math.random() * s5.length);
+    return s5[random];
 }
 document.querySelector('.b-5').addEventListener('click', function () {
     document.querySelector('.out-5').textContent = f05();

@@ -45,9 +45,10 @@ document.querySelector('.b-4').addEventListener('click', function (): void {
 
 let s5: string = 'abcdefg';
 
-function f05() {
-   return ''; // удалите данную строку при написании решения
-}
+function f05() : string {
+    let random = Math.floor(Math.random() * s5.length);
+    return s5[random];
+  }
 
 document.querySelector('.b-5').addEventListener('click', function (): void {
     document.querySelector('.out-5').textContent = f05();
