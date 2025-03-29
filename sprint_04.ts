@@ -156,8 +156,9 @@ document.querySelector('.b-13').addEventListener('click', function (): void {
 // Task 14
 // Давайте напишем теперь классическую функцию. Функция возвращает результат деления первого числа на второе. Однако добавим проверку. Если второй аргумент равен нулю - то возвращается false. Типы функции и аргументов напишите самостоятельно.
 
-function f14(a : number, b : number) : boolean : number {
-   
+function f14(a : number, b : number) : boolean | number {
+   if(b === 0) return false;
+   else return a / b; 
 }
 
 document.querySelector('.b-14').addEventListener('click', function (): void {
