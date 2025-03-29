@@ -131,11 +131,13 @@ document.querySelector('.b-11').addEventListener('click', function (): void {
 
 
 function f12(pass : string) : boolean{
-    return pass.length <= 8;
+
+ if(pass.length <= 8) return false;
+ return [...pass].some(item => item >= 'A' && item <= 'Z')
 }
 
 document.querySelector('.b-12').addEventListener('click', function (): void {
-    document.querySelector('.out-12').textContent = String(f12('drXenonBloom'));
+    document.querySelector('.out-12').textContent = String(f12('dreXnonBloom'));
 });
 
 

@@ -87,10 +87,12 @@ document.querySelector('.b-11').addEventListener('click', function () {
 // Тask 12
 // Напишите функцию проверку пароля. Функция принимает строку. Если пароль меньше или равен 8 символов, то функция возвращает false, если больше to возвращает true. Пароль должен содержать минимум один символ в верхнем регистре. Тип данных функции, аргументы и типы аргументов укажите самостоятельно. Задание решается без регулярных выражений!
 function f12(pass) {
-    return pass.length <= 8;
+    if (pass.length <= 8)
+        return false;
+    return [...pass].some(item => item >= 'A' && item <= 'Z');
 }
 document.querySelector('.b-12').addEventListener('click', function () {
-    document.querySelector('.out-12').textContent = String(f12('drXenonBloom'));
+    document.querySelector('.out-12').textContent = String(f12('dreXnonBloom'));
 });
 // Task 13
 // В некоторых случаях функции мало одного значения. Например, если у вас в функции нужно делать проверки. Давайте усложним предыдущую задачу - пользователь вводит пароль. Если длина пароля меньше или равна восемь символов, то функция возвращает false. Если больше - то сам пароль. Т.е. формально теперь функция может возвращать и string и boolean. Разберите пример.
