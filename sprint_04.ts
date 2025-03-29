@@ -116,8 +116,9 @@ document.querySelector('.b-10').addEventListener('click', function (): void {
 // Task 11
 // Напишите функцию, которая принимает два аргумента и возвращает целое случайное число от первого аргумента включительно до второго аргумента включительно. Тип функции и аргументов задайте самостоятельно.
 
-function f11(a, b) {
-    return ''; // удалите данную строку при написании решения
+function f11(a : number, b : number) : number {
+
+   return  Math.floor(Math.random() * (a - b + 1)) + b; 
 }
 
 document.querySelector('.b-11').addEventListener('click', function (): void {
