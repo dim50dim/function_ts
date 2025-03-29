@@ -44,7 +44,7 @@ let n61 = 33;
 let n62 = 55;
 let n63 = 42;
 function f06() {
-    return ''; // удалите данную строку при написании решения
+    return Math.max(n61, n62, n63);
 }
 document.querySelector('.b-6').addEventListener('click', function () {
     document.querySelector('.out-6').textContent = String(f06());
