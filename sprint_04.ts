@@ -76,6 +76,7 @@ document.querySelector('.b-6').addEventListener('click', function (): void {
 function f07() : void {
   let random = Math.floor(Math.random() * (170 - 150 + 1)) + 150;
   console.log(random);
+  return random;
   
 }
 
