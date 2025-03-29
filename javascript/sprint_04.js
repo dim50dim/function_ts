@@ -172,9 +172,12 @@ document.querySelector('.b-19').addEventListener('click', function () {
 // Task 20
 // Напишите функцию, которая принимает два необязательных аргумента - числа. И если они заданы генерирует и возвращает случайное целое в указанном диапазоне, а если не указаны - возвращает случайное целое число от 0 до 100.
 function f20(n1, n2) {
-    return ''; // удалите данную строку при написании решения
+    if (!n1 && !n2)
+        return Math.floor(Math.random() * 101);
+    else
+        return Math.floor(Math.random() * (n1 + 1 - n2)) + n2;
 }
 document.querySelector('.b-20').addEventListener('click', function () {
-    document.querySelector('.out-20').textContent = String(f20(200, 220));
+    document.querySelector('.out-20').textContent = String(f20());
 });
 //# sourceMappingURL=sprint_04.js.map
