@@ -22,7 +22,7 @@ function f02(): number {
 
 function f03(): void {
     console.log(55);
-    // return 55;
+    return 55;
 }
 
 f03();
