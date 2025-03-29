@@ -130,8 +130,8 @@ document.querySelector('.b-11').addEventListener('click', function (): void {
 // Напишите функцию проверку пароля. Функция принимает строку. Если пароль меньше или равен 8 символов, то функция возвращает false, если больше to возвращает true. Пароль должен содержать минимум один символ в верхнем регистре. Тип данных функции, аргументы и типы аргументов укажите самостоятельно. Задание решается без регулярных выражений!
 
 
-function f12(pass){
-    return ''; // удалите данную строку при написании решения
+function f12(pass : string) : boolean{
+    return pass.length <= 8;
 }
 
 document.querySelector('.b-12').addEventListener('click', function (): void {
