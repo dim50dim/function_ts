@@ -98,7 +98,7 @@ function f09(a: number, b: number): number {
     return a + b;
 }
 
- console.log(f09(5, 6, 7));
+//  console.log(f09(5, 6, 7));
 
 
 // Task 10
