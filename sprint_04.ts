@@ -224,7 +224,7 @@ document.querySelector('.b-18').addEventListener('click', function (): void {
 
 function f19(s1? : string, s2?: string) : string {
     if(!s1 && !s2) return '';
-    if(!s1) return s2!;
+    if(!s1) return s2;
     if(!s2) return s1;
     return s1.length >= s2.length ? s1 : s2;
 }
@@ -242,5 +242,5 @@ function f20(n1? : number, n2? : number) : number {
 }
 
 document.querySelector('.b-20').addEventListener('click', function (): void {
-    document.querySelector('.out-20').textContent = String(f20());
+    document.querySelector('.out-20').textContent = String(f20(200,220));
 });
