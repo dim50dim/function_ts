@@ -21,6 +21,7 @@ f03();
 // Task 04
 // Напишите функцию, которая возвращает случайное целое число от 0 до 100. Результат выведите в .out-4. Тип данных функции укажите соответствующий заданию.
 function f04() {
+    return Math.floor(Math.random() * 101);
 }
 document.querySelector('.b-4').addEventListener('click', function () {
     document.querySelector('.out-4').textContent = String(f04());
