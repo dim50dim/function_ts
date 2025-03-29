@@ -158,7 +158,13 @@ document.querySelector('.b-18').addEventListener('click', function () {
 // Task 19
 // Напишите функцию, которая принимает 2 необязательных аргумента - строки и возвращает большую по длине строку. Если передан один аргумент - возвращает его. Если аргументы не переданы - возвращает пустую строку. Типы функции и аргументов напишите самостоятельно.
 function f19(s1, s2) {
-    return ''; // удалите данную строку при написании решения
+    if (!s1 && !s2)
+        return '';
+    if (!s1)
+        return s2;
+    if (!s2)
+        return s1;
+    return s1.length >= s2.length ? s1 : s2;
 }
 document.querySelector('.b-19').addEventListener('click', function () {
     console.log(f19('Hi', 'hello'));
