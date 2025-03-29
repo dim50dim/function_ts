@@ -76,7 +76,7 @@ document.querySelector('.b-6').addEventListener('click', function (): void {
 function f07() : void {
   let random = Math.floor(Math.random() * (170 - 150 + 1)) + 150;
   console.log(random);
-  return random;
+  
   
 }
 
@@ -89,7 +89,7 @@ function f08(a: number, b: number): number {
     return a + b;
 }
 
-//  console.log(f08(5, 6));
+ console.log(f08(5, 6));
 
 // Task 09
 // В TS, в отличие от JS проводится контроль числа аргументов. Т.е. если в JS передать большее число аргументов чем положено, то ошибки не будет. А вот в TS так делать нельзя. Удалите комментарий со строки запуска и посмотрите как поведет себя компилятор. После - верните комментарий.
