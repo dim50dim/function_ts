@@ -52,6 +52,8 @@ document.querySelector('.b-6').addEventListener('click', function () {
 // Task 07
 // Напишите процедуру f07, которая выводит случайное целое число от 150 до 170 в .out-7. Тип данных процедуры - укажите самостоятельно.
 function f07() {
+    let random = Math.floor(Math.random() * (170 - 150 + 1)) + 150;
+    console.log(random);
 }
 document.querySelector('.b-7').addEventListener('click', f07);
 // Task 08
