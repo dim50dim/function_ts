@@ -178,7 +178,7 @@ function f15(pass) {
 }
 
 document.querySelector('.b-15').addEventListener('click', function (): void {
-    document.querySelector('.out-15').textContent = f15('RickSanchez');
+    document.querySelector('.out-15').textContent = f15('RickSanhchez');
 });
 
 // Task 16
@@ -186,8 +186,9 @@ document.querySelector('.b-15').addEventListener('click', function (): void {
 // Например -4.4f можно привести к числу -4.4
 // А вот f44 нельзя преобразовать к числу
 
-function f16(a) {
-    return ''; // удалите данную строку при написании решения
+function f16(a : string) : boolean | number {
+let num = parseFloat(a);
+return isNaN(num) ? false : num;
 }
 
 document.querySelector('.b-16').addEventListener('click', function (): void {

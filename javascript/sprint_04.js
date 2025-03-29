@@ -123,14 +123,15 @@ function f15(pass) {
     return 'use the correct password';
 }
 document.querySelector('.b-15').addEventListener('click', function () {
-    document.querySelector('.out-15').textContent = f15('RickSanchez');
+    document.querySelector('.out-15').textContent = f15('RickSanhchez');
 });
 // Task 16
 // Напишите функцию, которая может возвращать или boolean или число. Функция принимает строку, и если эту строку можно преобразовать к числу, то возвращает число, если нет - false.
 // Например -4.4f можно привести к числу -4.4
 // А вот f44 нельзя преобразовать к числу
 function f16(a) {
-    return ''; // удалите данную строку при написании решения
+    let num = parseFloat(a);
+    return isNaN(num) ? false : num;
 }
 document.querySelector('.b-16').addEventListener('click', function () {
     document.querySelector('.out-16').textContent = String(f16('200d'));
